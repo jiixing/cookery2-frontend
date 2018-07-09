@@ -29,7 +29,7 @@ export const create = (recipe: RecipeForm) => {
 
     return fetch(url, { method, data })
       .then(response => dispatch(recipeCreated(response.data)))
-      .then(() => dispatch(resetForm()))
+      .then(() => dispatch(resetForm())) //todo go to recipe list
       .catch(error => dispatch(recipeCreationFailed(error.response.data)))
   }
 }

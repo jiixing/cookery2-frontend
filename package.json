@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
+    "cross-env": "^5.2.0",
     "eslint-config-react-app": "^2.1.0",
     "normalizr": "^3.2.3",
     "ramda": "^0.25.0",
@@ -23,7 +24,7 @@
     "reselect": "^3.0.1"
   },
   "scripts": {
-    "start": "PORT=3005 react-scripts start",
+    "start": "cross-env PORT=3005 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
@@ -35,7 +36,7 @@
   "eslintConfig": {
     "extends": ".eslintrc.js"
   },
-  "proxy": "http://localhost:3006",
+  "proxy_NOTUSED": "http://localhost:3006",
   "devDependencies": {
     "babel-eslint": "^8.1.1",
     "coveralls": "^3.0.0",
